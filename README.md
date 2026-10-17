@@ -241,21 +241,25 @@ Start the development server:
 The frontend will normally run on:
   http://localhost:5173
 
-🌐 API Endpoints
-Authentication
-Method	Endpoint	          Description
-POST	  /api/auth/register	Register a new user
-POST	  /api/auth/login	    Login user
-GET	    /api/auth/me	      Get logged-in user
+## 🌐 API Endpoints
 
+### 🔐 Authentication
 
-Blog Posts
-Method	Endpoint	          Description
-GET	    /api/posts	        Get all posts
-GET	    /api/posts/:id	    Get a single post
-POST	  /api/posts	        Create a post
-PUT	    /api/posts/:id	    Update your post
-DELETE	/api/posts/:id	     Delete your post
+| Method | Endpoint            | Description              |
+|--------|---------------------|--------------------------|
+| `POST` | `/api/auth/register` | Register a new user      |
+| `POST` | `/api/auth/login`    | Login user               |
+| `GET`  | `/api/auth/me`       | Get logged-in user       |
+
+### 📝 Blog Posts
+
+| Method   | Endpoint          | Description          |
+|----------|-------------------|----------------------|
+| `GET`    | `/api/posts`      | Get all posts        |
+| `GET`    | `/api/posts/:id`  | Get a single post    |
+| `POST`   | `/api/posts`      | Create a new post    |
+| `PUT`    | `/api/posts/:id`  | Update your post     |
+| `DELETE` | `/api/posts/:id`  | Delete your post     |
 
 
 🧪 Testing the Application
